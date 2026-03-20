@@ -6,7 +6,7 @@ test('simple alert example', async ({ page }) => {
 
   // Alert handle
   page.on('dialog', async dialog => {
-    console.log("Alert message:", dialog.message());
+    console.log("Test message:", dialog.message());
     await dialog.accept();   // click OK
   });
 
